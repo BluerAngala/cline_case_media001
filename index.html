@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">LOGO</div>
+      <h1 class="title">视频标题</h1>
+    </header>
+    
+    <div class="image-container">
+      <img src="images/image01.png" alt="图片1" class="active">
+      <img src="images/image02.png" alt="图片2">
+      <img src="images/image03.png" alt="图片3">
+    </div>
+
+    <div class="caption-container">
+      <div class="caption"></div>
+    </div>
+    <button id="sound-toggle" class="sound-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+        <path id="sound-off" d="M17 9l6 6m0-6l-6 6" style="display:none;"/>
+      </svg>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+  <audio id="bg-music" loop autoplay>
+    <source src="audio/background.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+</body>
+</html>
